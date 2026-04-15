@@ -11,6 +11,8 @@ export function Hero() {
               <span className="text-muted-foreground">(Swahili: &quot;tell me&quot;)</span>
               <span>+</span>
               <span className="font-semibold">AI</span>
+              <span className="text-muted-foreground">=</span>
+              <span className="font-bold text-primary">SEMAi</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
               Your AI Assistant,{" "}
