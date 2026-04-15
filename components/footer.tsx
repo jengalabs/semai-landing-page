@@ -45,7 +45,7 @@ export function Footer() {
         
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} SEMAi. All rights reserved.
+            &copy; {new Date().getFullYear()} SEMAi. All rights reserved. 🚀
           </p>
         </div>
       </div>
