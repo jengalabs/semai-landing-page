@@ -44,7 +44,7 @@ export function Pricing() {
             Free Right Now
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Semai is completely free with unlimited messages right now. A Pro version with premium features is coming soon.
+            SEMAi is completely free with unlimited messages right now. A Pro version with premium features is coming soon.
           </p>
         </div>
 

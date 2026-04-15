@@ -9,13 +9,13 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <Image
               src="/semai-logo.png"
-              alt="Semai Logo"
+              alt="SEMAi Logo"
               width={40}
               height={40}
               className="w-10 h-10"
             />
             <div>
-              <p className="font-bold text-foreground">Semai</p>
+              <p className="font-bold text-foreground">SEMAi</p>
               <p className="text-sm text-muted-foreground">SMS AI Chat Bot</p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export function Footer() {
         
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Semai. All rights reserved.
+            &copy; {new Date().getFullYear()} SEMAi. All rights reserved.
           </p>
         </div>
       </div>

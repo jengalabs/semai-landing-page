@@ -13,7 +13,7 @@ export function AboutAI() {
             </p>
 
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
-              <h3 className="text-lg font-semibold text-foreground mb-4">How Semai&apos;s AI Works</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-4">How SEMAi's AI Works</h3>
               <ul className="space-y-3">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold text-xl">→</span>
@@ -21,7 +21,7 @@ export function AboutAI() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold text-xl">→</span>
-                  <span>Semai&apos;s AI understands your question in any language</span>
+                  <span>SEMAi&apos;s AI understands your question in any language</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold text-xl">→</span>
@@ -46,7 +46,7 @@ export function AboutAI() {
             </div>
 
             <p className="text-lg leading-relaxed pt-4">
-              Think of Semai as a smart friend in your phone who speaks your language, knows a lot of things, and is always available to help—accessible via simple text message.
+              Think of SEMAi as a smart friend in your phone who speaks your language, knows a lot of things, and is always available to help—accessible via simple text message.
             </p>
           </div>
         </div>

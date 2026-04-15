@@ -9,12 +9,12 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/semai-logo.png"
-              alt="Semai Logo"
+              alt="SEMAi Logo"
               width={40}
               height={40}
               className="w-10 h-10"
             />
-            <span className="font-bold text-xl text-foreground">Semai</span>
+            <span className="font-bold text-xl text-foreground">SEMAi</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
