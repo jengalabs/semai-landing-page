@@ -4,31 +4,33 @@ export function Pricing() {
       name: "Free",
       price: "KES 0",
       period: "/month",
-      description: "Perfect for trying out Semai",
+      description: "Everything is free right now",
+      badge: "Current",
       features: [
-        "20 messages per month",
+        "Unlimited messages",
         "English & Swahili support",
-        "Basic AI responses",
-        "Standard response time",
+        "AI responses on any topic",
+        "24/7 availability",
       ],
       cta: "Start Free",
-      featured: false,
+      featured: true,
     },
     {
       name: "Pro",
       price: "KES 199",
       period: "/month",
-      description: "For daily AI assistance",
+      description: "Premium features coming soon",
+      badge: "Coming Soon",
       features: [
-        "Unlimited messages",
-        "English & Swahili support",
-        "Advanced AI responses",
+        "All Free features +",
+        "Advanced AI capabilities",
         "Priority response time",
-        "Longer conversations",
-        "Pay via M-Pesa",
+        "Longer conversation history",
+        "Priority support",
       ],
-      cta: "Go Pro",
-      featured: true,
+      cta: "Notify Me",
+      featured: false,
+      disabled: true,
     },
   ]
 
@@ -37,10 +39,10 @@ export function Pricing() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Simple, Affordable Pricing
+            Free For Everyone, Forever
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Start free, upgrade when you need more. Pay with M-Pesa.
+            Right now, Semai is completely free with unlimited messages. A Pro version is coming soon with premium features.
           </p>
         </div>
 
@@ -48,15 +50,19 @@ export function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative rounded-2xl p-8 ${
+              className={`relative rounded-2xl p-8 transition-opacity ${
                 plan.featured
                   ? "bg-primary text-primary-foreground ring-4 ring-primary/20"
                   : "bg-background border border-border"
-              }`}
+              } ${plan.disabled ? "opacity-75" : ""}`}
             >
-              {plan.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-medium">
-                  Most Popular
+              {plan.badge && (
+                <span className={`absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-sm font-medium ${
+                  plan.featured
+                    ? "bg-accent text-accent-foreground"
+                    : "bg-muted text-muted-foreground border border-border"
+                }`}>
+                  {plan.badge}
                 </span>
               )}
               <div className="text-center mb-8">
@@ -88,9 +94,14 @@ export function Pricing() {
               </ul>
 
               <a
-                href="sms:20880?body=semai"
+                href={plan.disabled ? "#" : "sms:20880?body=semai"}
+                onClick={(e) => plan.disabled && e.preventDefault()}
                 className={`block w-full text-center py-3 px-6 rounded-xl font-semibold transition-colors ${
-                  plan.featured
+                  plan.disabled
+                    ? plan.featured
+                      ? "bg-primary-foreground text-primary opacity-60 cursor-not-allowed"
+                      : "bg-muted text-muted-foreground opacity-60 cursor-not-allowed"
+                    : plan.featured
                     ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                     : "bg-primary text-primary-foreground hover:bg-primary/90"
                 }`}
