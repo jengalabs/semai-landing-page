@@ -57,32 +57,23 @@ export function SMSButton({ children, className }: SMSButtonProps) {
           </DialogHeader>
           
           <div className="flex flex-col items-center gap-6 py-6">
-            <div className="bg-gradient-to-b from-primary/5 to-primary/10 rounded-3xl p-8 w-full max-w-sm border border-primary/20">
-              <div className="bg-white rounded-2xl p-6 shadow-sm space-y-4">
-                <div className="flex items-center gap-3 pb-4 border-b border-border">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-xl">💬</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">SEMAi</p>
-                    <p className="text-sm text-muted-foreground">AI Assistant</p>
-                  </div>
+            <div className="bg-primary/10 rounded-2xl p-6 w-full">
+              <div className="text-center space-y-4">
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1">Send to:</p>
+                  <p className="text-3xl font-bold text-primary">{SEMAI_CONFIG.shortcode}</p>
                 </div>
-                
-                <div className="bg-primary text-primary-foreground rounded-2xl rounded-bl-none p-4 ml-auto max-w-xs">
-                  <p className="text-sm">semai</p>
+                <div className="h-px bg-border" />
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1">Message:</p>
+                  <p className="text-2xl font-mono font-semibold text-foreground">semai</p>
                 </div>
-              </div>
-              
-              <div className="text-center mt-6 space-y-2">
-                <p className="text-sm font-semibold text-foreground">Send to:</p>
-                <p className="text-2xl font-bold text-primary">{SEMAI_CONFIG.shortcode}</p>
               </div>
             </div>
             
-            <div className="text-center text-sm text-muted-foreground space-y-1">
+            <div className="text-center text-sm text-muted-foreground">
               <p>Works on {SEMAI_CONFIG.networks.join(" and ")} in {SEMAI_CONFIG.country}</p>
-              <p>No data needed - SMS only</p>
+              <p className="mt-1">No data needed - just SMS</p>
             </div>
           </div>
         </DialogContent>
