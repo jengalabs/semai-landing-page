@@ -1,6 +1,6 @@
-""use client"
+"use client"
 
-import { SEMAI_CONFIG } from "@/config/semai""
+import { SEMAI_CONFIG } from "@/config/semai"
 
 export function Pricing() {
   const plans = [
