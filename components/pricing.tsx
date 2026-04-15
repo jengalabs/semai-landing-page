@@ -1,4 +1,6 @@
-"use client"
+""use client"
+
+import { SEMAI_CONFIG } from "@/config/semai""
 
 export function Pricing() {
   const plans = [
@@ -96,7 +98,7 @@ export function Pricing() {
               </ul>
 
               <a
-                href={plan.disabled ? "#" : "sms:20880?body=semai"}
+                href={plan.disabled ? "#" : `sms:${SEMAI_CONFIG.shortcode}?body=semai`}
                 onClick={(e) => plan.disabled && e.preventDefault()}
                 className={`block w-full text-center py-3 px-6 rounded-xl font-semibold transition-colors ${
                   plan.disabled

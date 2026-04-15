@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { SEMAI_CONFIG } from "@/config/semai"
 
 export function Hero() {
   return (
@@ -19,16 +20,16 @@ export function Hero() {
               <span className="text-primary">Via SMS</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Chat with AI on any phone in Kenya. <span className="font-semibold text-foreground">No data needed</span>. 
-              Just text from your Safaricom or Airtel number.
+              Chat with AI on any phone in {SEMAI_CONFIG.country}. <span className="font-semibold text-foreground">No data needed</span>. 
+              Just text from your {SEMAI_CONFIG.networks.join(" or ")} number.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="sms:20880?body=semai"
+                href={`sms:${SEMAI_CONFIG.shortcode}?body=semai`}
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
               >
                 <MessageIcon className="w-5 h-5" />
-                Text semai to 20880
+                Text semai to {SEMAI_CONFIG.shortcode}
               </a>
               <a
                 href="#how-it-works"
@@ -75,7 +76,7 @@ function PhoneMockup() {
             </div>
             <div>
               <p className="font-semibold text-foreground text-sm">Semai</p>
-              <p className="text-xs text-muted-foreground">20880</p>
+              <p className="text-xs text-muted-foreground">Semai</p>
             </div>
           </div>
           

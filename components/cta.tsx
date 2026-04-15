@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { SEMAI_CONFIG } from "@/config/semai"
 
 export function CTA() {
   return (
@@ -10,24 +11,24 @@ export function CTA() {
           <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             <div className="flex-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4 text-balance">
-                Ready to Try Semai?
+                Ready to Try SEMAi?
               </h2>
               <p className="text-lg text-primary-foreground/80 mb-8 max-w-xl">
-                Join thousands of Kenyans already using AI via SMS. No data needed.
+                Join thousands of {SEMAI_CONFIG.country}ns already using AI via SMS. No data needed.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a
-                  href="sms:20880?body=semai"
+                  href={`sms:${SEMAI_CONFIG.shortcode}?body=semai`}
                   className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-foreground/90 transition-colors"
                 >
                   <MessageIcon className="w-5 h-5" />
-                  Text semai to 20880
+                  Text semai to {SEMAI_CONFIG.shortcode}
                 </a>
               </div>
               
               <p className="mt-6 text-sm text-primary-foreground/60">
-                Works on Safaricom and Airtel networks
+                Works on {SEMAI_CONFIG.networks.join(" and ")} networks
               </p>
             </div>
             
