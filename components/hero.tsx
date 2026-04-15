@@ -8,7 +8,7 @@ export function Hero() {
           <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="font-semibold">SEMA</span>
-              <span className="text-muted-foreground">(Swahili: &quot;tell me&quot;)</span>
+              <span className="text-muted-foreground">(tell me)</span>
               <span>+</span>
               <span className="font-semibold">AI</span>
               <span className="text-muted-foreground">=</span>
