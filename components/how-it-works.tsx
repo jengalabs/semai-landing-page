@@ -61,7 +61,7 @@ export function HowItWorks() {
                   {step.examples.map((example, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <span className="text-primary text-lg leading-none mt-0.5">›</span>
-                      <span className="text-sm text-foreground font-mono bg-primary/5 px-2 py-1 rounded">
+                      <span className="text-sm text-foreground bg-primary/5 px-2 py-1 rounded">
                         {example}
                       </span>
                     </div>

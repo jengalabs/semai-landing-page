@@ -92,7 +92,7 @@ export function UseCases() {
                 {useCase.examples.map((example, i) => (
                   <div
                     key={i}
-                    className="text-sm font-mono bg-secondary/50 text-secondary-foreground px-3 py-2 rounded-lg"
+                    className="text-sm bg-secondary/50 text-secondary-foreground px-3 py-2 rounded-lg"
                   >
                     {example}
                   </div>
