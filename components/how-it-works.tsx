@@ -2,8 +2,8 @@ export function HowItWorks() {
   const steps = [
     {
       number: "1",
-      title: "Text \"SEMAI\" to 20880",
-      description: "Open your SMS app and send the word SEMAI to shortcode 20880. Works on any Safaricom or Airtel number.",
+      title: "Text \"semai\" to 20880",
+      description: "Open your SMS app and send the word semai to shortcode 20880. Works on any Safaricom or Airtel number.",
       examples: ["semai", "SEMAI", "semai hello"],
       icon: SendIcon,
     },

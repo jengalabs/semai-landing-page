@@ -34,7 +34,7 @@ export function Footer() {
           
           <div className="text-center md:text-right">
             <p className="text-sm text-muted-foreground">
-              Text <span className="font-semibold text-foreground">SEMAI</span> to <span className="font-semibold text-foreground">20880</span>
+              Text <span className="font-semibold text-foreground">semai</span> to <span className="font-semibold text-foreground">20880</span>
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               Safaricom & Airtel Kenya

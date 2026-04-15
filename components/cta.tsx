@@ -22,7 +22,7 @@ export function CTA() {
                   className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-foreground/90 transition-colors"
                 >
                   <MessageIcon className="w-5 h-5" />
-                  Text SEMAI to 20880
+                  Text semai to 20880
                 </a>
               </div>
               

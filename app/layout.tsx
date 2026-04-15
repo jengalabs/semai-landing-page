@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Semai - Your AI Assistant Via SMS',
-  description: 'Chat with AI on any phone in Kenya. No app needed, no internet required. Just text SEMAI to 20880 from Safaricom or Airtel.',
+  description: 'Chat with AI on any phone in Kenya. No app needed, no internet required. Just text semai to 20880 from Safaricom or Airtel.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -28,7 +28,7 @@ export function Hero() {
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
               >
                 <MessageIcon className="w-5 h-5" />
-                Text SEMAI to 20880
+                Text semai to 20880
               </a>
               <a
                 href="#how-it-works"
