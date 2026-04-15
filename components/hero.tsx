@@ -6,12 +6,18 @@ export function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <span className="font-semibold">SEMA</span>
+              <span className="text-muted-foreground">(Swahili: &quot;tell me&quot;)</span>
+              <span>+</span>
+              <span className="font-semibold">AI</span>
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
               Your AI Assistant,{" "}
               <span className="text-primary">Via SMS</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Chat with AI on any phone in Kenya. No app download needed, no internet required, <span className="font-semibold text-foreground">no data needed</span>. 
+              Chat with AI on any phone in Kenya. No app download, no internet, <span className="font-semibold text-foreground">no data needed</span>. 
               Just text from your Safaricom or Airtel number.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
