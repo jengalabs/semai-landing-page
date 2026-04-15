@@ -21,7 +21,7 @@ export function Hero() {
               <span className="text-primary">Via SMS</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Chat with AI on any phone in {SEMAI_CONFIG.country}. <span className="font-semibold text-foreground">No data needed</span>. 
+              Chat with AI on any phone in {SEMAI_CONFIG.country}. <span className="font-semibold text-foreground">No data needed</span>.
               Just text from your {SEMAI_CONFIG.networks.join(" or ")} number.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -47,7 +47,7 @@ export function Hero() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex-1 flex justify-center lg:justify-end">
             <PhoneMockup />
           </div>
@@ -73,42 +73,42 @@ function PhoneMockup() {
               />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm">Semai</p>
-              <p className="text-xs text-muted-foreground">Semai</p>
+              <p className="font-semibold text-foreground text-sm">20880</p>
+              <p className="text-xs text-muted-foreground">semai</p>
             </div>
           </div>
-          
+
           <div className="p-4 space-y-3 min-h-[400px] bg-card">
             <div className="flex justify-end">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-2xl rounded-tr-sm max-w-[200px]">
                 <p className="text-sm">semai nairobi weather leo</p>
               </div>
             </div>
-            
+
             <div className="flex justify-start">
               <div className="bg-secondary text-secondary-foreground px-4 py-2 rounded-2xl rounded-tl-sm max-w-[220px]">
                 <p className="text-sm">Nairobi: 24°C, partly cloudy. Expect light showers tonight 🌧️</p>
               </div>
             </div>
-            
+
             <div className="flex justify-end">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-2xl rounded-tr-sm max-w-[200px]">
                 <p className="text-sm">semai jinsi ya kuandika essay</p>
               </div>
             </div>
-            
+
             <div className="flex justify-start">
               <div className="bg-secondary text-secondary-foreground px-4 py-2 rounded-2xl rounded-tl-sm max-w-[220px]">
                 <p className="text-sm">Andika intro, 3 main points, na conclusion. Intro ya 2-3 sentences...</p>
               </div>
             </div>
-            
+
             <div className="flex justify-end">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-2xl rounded-tr-sm max-w-[200px]">
                 <p className="text-sm">semai How to start a biz?</p>
               </div>
             </div>
-            
+
             <div className="flex justify-start">
               <div className="bg-secondary text-secondary-foreground px-4 py-2 rounded-2xl rounded-tl-sm max-w-[220px]">
                 <p className="text-sm">Research market, create a plan, manage costs. Start small & grow! 💡</p>
@@ -117,7 +117,7 @@ function PhoneMockup() {
           </div>
         </div>
       </div>
-      
+
       <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary/20 rounded-full blur-3xl" />
     </div>
   )
