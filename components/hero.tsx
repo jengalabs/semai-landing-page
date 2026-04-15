@@ -93,13 +93,13 @@ function PhoneMockup() {
 
             <div className="flex justify-end">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-2xl rounded-tr-sm max-w-[200px]">
-                <p className="text-sm">semai kinyarwanda mbere</p>
+                <p className="text-sm">semai jinsi ya kusoma vizuri</p>
               </div>
             </div>
 
             <div className="flex justify-start">
               <div className="bg-secondary text-secondary-foreground px-4 py-2 rounded-2xl rounded-tl-sm max-w-[220px]">
-                <p className="text-sm">Kinyarwanda ni ururimi rwacu. Wowe uri mwami! 👋</p>
+                <p className="text-sm">Pata mahali tulivu, soma haraka kwa kwanza, kisha pole pole. Jaribu kila siku! 📚</p>
               </div>
             </div>
 
