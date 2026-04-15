@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { HowItWorks } from "@/components/how-it-works"
+import { AboutAI } from "@/components/about-ai"
 import { UseCases } from "@/components/use-cases"
 import { Features } from "@/components/features"
 import { Pricing } from "@/components/pricing"
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <HowItWorks />
+        <AboutAI />
         <UseCases />
         <Features />
         <Pricing />
