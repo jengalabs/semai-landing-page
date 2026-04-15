@@ -1,0 +1,24 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light mode version (will be styled via CSS or used as fallback) -->
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .semai-bg { fill: #1a1a1a; }
+        .semai-icon { fill: #ffffff; }
+      }
+      @media (prefers-color-scheme: light) {
+        .semai-bg { fill: #ffffff; }
+        .semai-icon { fill: #2D5FD1; }
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" class="semai-bg"/>
+  
+  <!-- Letter S as message bubble -->
+  <g class="semai-icon">
+    <!-- S shape inside message bubble -->
+    <path d="M10 8 C8 8 7 9 7 11 C7 12.5 8 13 10 13.5 C12 14 13 14.5 13 16 C13 17 12 18 10.5 18 C9 18 8 17.5 8 16 M14 13 L18 13 C19 13 20 12 20 11 L20 19 C20 20 19 21 18 21 L10 21 C9 21 8 20 8 19" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
