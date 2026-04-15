@@ -93,25 +93,25 @@ function PhoneMockup() {
 
             <div className="flex justify-end">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-2xl rounded-tr-sm max-w-[200px]">
-                <p className="text-sm">semai jinsi ya kuandika essay</p>
+                <p className="text-sm">semai kinyarwanda mbere</p>
               </div>
             </div>
 
             <div className="flex justify-start">
               <div className="bg-secondary text-secondary-foreground px-4 py-2 rounded-2xl rounded-tl-sm max-w-[220px]">
-                <p className="text-sm">Andika intro, 3 main points, na conclusion. Intro ya 2-3 sentences...</p>
+                <p className="text-sm">Kinyarwanda ni ururimi rwacu. Wowe uri mwami! 👋</p>
               </div>
             </div>
 
             <div className="flex justify-end">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-2xl rounded-tr-sm max-w-[200px]">
-                <p className="text-sm">semai How to start a biz?</p>
+                <p className="text-sm">semai how to make ugali?</p>
               </div>
             </div>
 
             <div className="flex justify-start">
               <div className="bg-secondary text-secondary-foreground px-4 py-2 rounded-2xl rounded-tl-sm max-w-[220px]">
-                <p className="text-sm">Research market, create a plan, manage costs. Start small & grow! 💡</p>
+                <p className="text-sm">Boil water, add salt, stir in maize flour. Mix well until thick! 🍲</p>
               </div>
             </div>
           </div>

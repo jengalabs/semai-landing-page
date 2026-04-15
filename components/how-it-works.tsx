@@ -12,8 +12,8 @@ export function HowItWorks() {
     {
       number: "2",
       title: "Ask Anything in Any Language",
-      description: "Start your message with 'semai' then ask your question. English, Swahili, Kikuyu—any language works.",
-      examples: ["semai what is photosynthesis", "semai jinsi ya kutengeneza ugali", "semai how do I start a business"],
+      description: "Start your message with 'semai' then ask your question. English, Swahili, Kikuyu, Luhya—any language works.",
+      examples: ["semai what is photosynthesis", "semai jinsi ya kutengeneza ugali", "semai uria wooyo nyumba", "semai how do I start a business"],
       icon: QuestionIcon,
     },
     {

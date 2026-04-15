@@ -5,8 +5,8 @@ export function UseCases() {
       icon: BookIcon,
       examples: [
         "semai explain photosynthesis",
+        "semai gitahe gita biology",
         "semai solve 2x + 5 = 15",
-        "semai history of Kenya independence",
         "semai essay outline on climate change",
       ],
     },
@@ -15,9 +15,9 @@ export function UseCases() {
       icon: PlantIcon,
       examples: [
         "semai best time to plant maize",
+        "semai howuoro ndalo ni nzuri kwa mahindi",
         "semai how to treat tomato blight",
         "semai weather forecast Nakuru",
-        "semai current maize prices",
       ],
     },
     {
@@ -25,9 +25,9 @@ export function UseCases() {
       icon: BriefcaseIcon,
       examples: [
         "semai how to register a business in Kenya",
+        "semai uria manonya biashara",
         "semai write a professional invoice",
         "semai marketing tips for small shop",
-        "semai calculate profit margin 30%",
       ],
     },
     {
@@ -35,8 +35,8 @@ export function UseCases() {
       icon: HomeIcon,
       examples: [
         "semai recipe for pilau",
+        "semai jinsi ya kuandika barua nzuri",
         "semai first aid for burns",
-        "semai bus fare Nairobi to Mombasa",
         "semai translate hello to Kikuyu",
       ],
     },
@@ -45,8 +45,8 @@ export function UseCases() {
       icon: HeartIcon,
       examples: [
         "semai symptoms of malaria",
+        "semai kina cha malaria ni nini",
         "semai healthy breakfast ideas",
-        "semai nearest hospital Kisumu",
         "semai home remedies for headache",
       ],
     },
@@ -55,8 +55,8 @@ export function UseCases() {
       icon: SearchIcon,
       examples: [
         "semai write a CV summary",
+        "semai kuma kwandika CV",
         "semai interview tips",
-        "semai how to answer tell me about yourself",
         "semai salary negotiation advice",
       ],
     },
