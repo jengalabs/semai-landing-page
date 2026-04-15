@@ -1,6 +1,7 @@
 "use client"
 
 import { SEMAI_CONFIG } from "@/config/semai"
+import { SMSButton } from "@/components/sms-button"
 
 export function Pricing() {
   const plans = [
@@ -97,21 +98,27 @@ export function Pricing() {
                 ))}
               </ul>
 
-              <a
-                href={plan.disabled ? "#" : `sms:${SEMAI_CONFIG.shortcode}?body=semai`}
-                onClick={(e) => plan.disabled && e.preventDefault()}
-                className={`block w-full text-center py-3 px-6 rounded-xl font-semibold transition-colors ${
-                  plan.disabled
-                    ? plan.featured
+              {plan.disabled ? (
+                <span
+                  className={`block w-full text-center py-3 px-6 rounded-xl font-semibold transition-colors ${
+                    plan.featured
                       ? "bg-primary-foreground text-primary opacity-60 cursor-not-allowed"
                       : "bg-muted text-muted-foreground opacity-60 cursor-not-allowed"
-                    : plan.featured
-                    ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-                    : "bg-primary text-primary-foreground hover:bg-primary/90"
-                }`}
-              >
-                {plan.cta}
-              </a>
+                  }`}
+                >
+                  {plan.cta}
+                </span>
+              ) : (
+                <SMSButton
+                  className={`block w-full text-center py-3 px-6 rounded-xl font-semibold transition-colors ${
+                    plan.featured
+                      ? "bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                      : "bg-primary text-primary-foreground hover:bg-primary/90"
+                  }`}
+                >
+                  {plan.cta}
+                </SMSButton>
+              )}
             </div>
           ))}
         </div>

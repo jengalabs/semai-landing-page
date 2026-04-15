@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { SEMAI_CONFIG } from "@/config/semai"
+import { SMSButton } from "@/components/sms-button"
 
 export function Hero() {
   return (
@@ -24,13 +25,10 @@ export function Hero() {
               Just text from your {SEMAI_CONFIG.networks.join(" or ")} number.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
-                href={`sms:${SEMAI_CONFIG.shortcode}?body=semai`}
-                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
-              >
+              <SMSButton className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25">
                 <MessageIcon className="w-5 h-5" />
                 Text semai to {SEMAI_CONFIG.shortcode}
-              </a>
+              </SMSButton>
               <a
                 href="#how-it-works"
                 className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary/80 transition-colors"

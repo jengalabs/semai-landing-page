@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { SMSButton } from "@/components/sms-button"
 
 export function Header() {
   return (
@@ -27,12 +28,9 @@ export function Header() {
               Pricing
             </Link>
           </nav>
-          <a
-            href="sms:20880?body=semai"
-            className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors text-sm"
-          >
+          <SMSButton className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors text-sm">
             Try Now
-          </a>
+          </SMSButton>
         </div>
       </div>
     </header>

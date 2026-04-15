@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { SEMAI_CONFIG } from "@/config/semai"
+import { SMSButton } from "@/components/sms-button"
 
 export function CTA() {
   return (
@@ -18,13 +19,10 @@ export function CTA() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a
-                  href={`sms:${SEMAI_CONFIG.shortcode}?body=semai`}
-                  className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-foreground/90 transition-colors"
-                >
+                <SMSButton className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-foreground/90 transition-colors">
                   <MessageIcon className="w-5 h-5" />
                   Text semai to {SEMAI_CONFIG.shortcode}
-                </a>
+                </SMSButton>
               </div>
               
               <p className="mt-6 text-sm text-primary-foreground/60">
