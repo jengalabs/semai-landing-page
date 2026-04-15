@@ -70,7 +70,7 @@ export function UseCases() {
             What Can You Ask SEMAi?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            From homework help to business advice, Semai answers questions for everyone. Just text &quot;semai&quot; + your question.
+            From homework help to business advice, SEMAi answers questions for everyone. Just text &quot;semai&quot; + your question.
           </p>
         </div>
 
