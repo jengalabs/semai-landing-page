@@ -41,10 +41,10 @@ export function Pricing() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Free For Everyone, Forever
+            Free Right Now
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Right now, Semai is completely free with unlimited messages. A Pro version is coming soon with premium features.
+            Semai is completely free with unlimited messages right now. A Pro version with premium features is coming soon.
           </p>
         </div>
 
