@@ -42,8 +42,8 @@ export function HowItWorks() {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-6">
                   <step.icon className="w-8 h-8 text-primary" />
                 </div>
-                <div className="absolute top-8 left-[60%] hidden md:block w-[calc(100%-2rem)] h-[2px] bg-border last:hidden" style={{ display: index === 2 ? 'none' : undefined }} />
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold mb-4">
+                <div className="absolute top-8 left-[60%] hidden md:block w-[calc(100%-2rem)] h-[2px] bg-border z-0 last:hidden" style={{ display: index === 2 ? 'none' : undefined }} />
+                <span className="relative z-10 inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold mb-4">
                   {step.number}
                 </span>
                 <h3 className="text-xl font-semibold text-foreground mb-3">
