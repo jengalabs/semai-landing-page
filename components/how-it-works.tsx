@@ -19,7 +19,7 @@ export function HowItWorks() {
     {
       number: "3",
       title: "Get Instant Reply",
-      description: "Receive a helpful AI-powered response within seconds. No internet needed—SMS only. Reply anytime.",
+      description: "Receive a helpful AI-powered response within seconds. No data needed—SMS only. Reply anytime.",
       examples: ["semai nairobi weather", "semai recipe for chapati", "semai tumaini pronunciation"],
       icon: ReplyIcon,
     },

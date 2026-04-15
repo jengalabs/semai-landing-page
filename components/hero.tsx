@@ -45,7 +45,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckIcon className="w-4 h-4 text-accent" />
-                <span>No internet needed</span>
+                <span>No data needed</span>
               </div>
             </div>
           </div>
