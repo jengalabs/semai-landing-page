@@ -121,9 +121,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold;
+    font-family: var(--font-poppins, Poppins, sans-serif);
+    @apply font-bold;
   }
+}
+
+/* Poppins font class */
+.poppins {
+  font-family: var(--font-poppins, Poppins, sans-serif);
 }

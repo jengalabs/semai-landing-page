@@ -43,7 +43,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-background" style={{ ...poppins.style, ...inter.style }}>
+    <html 
+      lang="en" 
+      className={`bg-background ${inter.className}`}
+      style={{
+        '--font-poppins': poppins.style.fontFamily,
+      } as React.CSSProperties}
+    >
       <body className="font-body antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
