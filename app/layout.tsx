@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Semai - Your AI Assistant Via SMS',
     description: 'Chat with AI on any phone in Kenya. No app needed, no internet required.',
-    image: '/og-image.png',
+    image: '/semai-logo.png',
     url: 'https://semai.vercel.app',
     type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
-    image: '/og-image.png',
+    card: 'summary',
+    image: '/semai-logo.png',
     title: 'Semai - Your AI Assistant Via SMS',
     description: 'Chat with AI on any phone in Kenya. No app needed, no internet required.',
   },
