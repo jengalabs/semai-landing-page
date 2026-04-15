@@ -19,7 +19,7 @@ export function Hero() {
               <span className="text-primary">Via SMS</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Chat with AI on any phone in Kenya. No app download, no internet, <span className="font-semibold text-foreground">no data needed</span>. 
+              Chat with AI on any phone in Kenya. <span className="font-semibold text-foreground">No data needed</span>. 
               Just text from your Safaricom or Airtel number.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

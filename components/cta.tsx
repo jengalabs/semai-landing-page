@@ -13,7 +13,7 @@ export function CTA() {
                 Ready to Try Semai?
               </h2>
               <p className="text-lg text-primary-foreground/80 mb-8 max-w-xl">
-                Join thousands of Kenyans already using AI via SMS. No app download, no internet, no hassle.
+                Join thousands of Kenyans already using AI via SMS. No data needed.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
