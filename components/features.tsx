@@ -1,14 +1,19 @@
 export function Features() {
   const features = [
     {
+      icon: DataIcon,
+      title: "No Data Needed",
+      description: "Works on SMS only. No internet, WiFi, or mobile data required. Just text and get instant replies.",
+    },
+    {
       icon: PhoneIcon,
       title: "Works on Any Phone",
-      description: "No smartphone needed. Use any basic phone with SMS capability. Feature phones, old Nokias, anything works!",
+      description: "Feature phones, old Nokias, basic phones—if it sends SMS, it works with Semai.",
     },
     {
       icon: LanguageIcon,
-      title: "Swahili & English",
-      description: "Ask questions and get replies in both Swahili and English. Switch languages anytime, mix them freely.",
+      title: "Every Language Works",
+      description: "English, Swahili, Kikuyu, Luo, Kamba, Somali—ask in any language, get replies in any language.",
     },
     {
       icon: ClockIcon,
@@ -21,14 +26,9 @@ export function Features() {
       description: "Start free with 20 messages per month. Pro plans available for unlimited access at local KES rates.",
     },
     {
-      icon: ShieldIcon,
-      title: "Private & Secure",
-      description: "Your conversations are private. We don&apos;t share your data or messages with third parties.",
-    },
-    {
       icon: BrainIcon,
       title: "Powered by Advanced AI",
-      description: "Get intelligent, helpful responses on any topic from homework help to business advice.",
+      description: "Get intelligent, helpful responses on homework, business advice, weather, recipes, and more.",
     },
   ]
 
@@ -71,6 +71,14 @@ function PhoneIcon({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+    </svg>
+  )
+}
+
+function DataIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.332a9 9 0 11-1.414-1.414M21 12a9 9 0 11-9-9m6.707-3.707l-3 3m0-6l3 3m-6 0l3-3m0 6l-3-3" />
     </svg>
   )
 }

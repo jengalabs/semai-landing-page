@@ -4,18 +4,21 @@ export function HowItWorks() {
       number: "1",
       title: "Text \"SEMAI\" to 20880",
       description: "Open your SMS app and send the word SEMAI to shortcode 20880. Works on any Safaricom or Airtel number.",
+      examples: ["semai", "SEMAI", "semai hello"],
       icon: SendIcon,
     },
     {
       number: "2",
-      title: "Ask Anything",
-      description: "Type your question in English or Swahili. Ask about weather, recipes, homework help, business advice, and more.",
+      title: "Ask Anything in Any Language",
+      description: "Start your message with 'semai' then ask your question. English, Swahili, Kikuyu—any language works.",
+      examples: ["semai what is photosynthesis", "semai jinsi ya kutengeneza ugali", "semai how do I start a business"],
       icon: QuestionIcon,
     },
     {
       number: "3",
       title: "Get Instant Reply",
-      description: "Receive a helpful AI-powered response within seconds. Continue the conversation naturally via SMS.",
+      description: "Receive a helpful AI-powered response within seconds. No internet needed—SMS only. Reply anytime.",
+      examples: ["semai nairobi weather", "semai recipe for chapati", "semai tumaini pronunciation"],
       icon: ReplyIcon,
     },
   ]
@@ -28,26 +31,41 @@ export function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Start chatting with AI in under 30 seconds. No downloads, no sign-ups, no internet required.
+            Start chatting with AI in under 30 seconds. Always text with &quot;<span className="font-semibold text-foreground">semai</span>&quot; at the start.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {steps.map((step, index) => (
-            <div key={index} className="relative text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-6">
-                <step.icon className="w-8 h-8 text-primary" />
+            <div key={index} className="relative">
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-6">
+                  <step.icon className="w-8 h-8 text-primary" />
+                </div>
+                <div className="absolute top-8 left-[60%] hidden md:block w-[calc(100%-2rem)] h-[2px] bg-border last:hidden" style={{ display: index === 2 ? 'none' : undefined }} />
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold mb-4">
+                  {step.number}
+                </span>
+                <h3 className="text-xl font-semibold text-foreground mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {step.description}
+                </p>
               </div>
-              <div className="absolute top-8 left-[60%] hidden md:block w-[calc(100%-2rem)] h-[2px] bg-border last:hidden" style={{ display: index === 2 ? 'none' : undefined }} />
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold mb-4">
-                {step.number}
-              </span>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                {step.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {step.description}
-              </p>
+              <div className="bg-background border border-border rounded-xl p-4 mt-8">
+                <p className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">Example Messages:</p>
+                <div className="space-y-2">
+                  {step.examples.map((example, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <span className="text-primary text-lg leading-none mt-0.5">›</span>
+                      <span className="text-sm text-foreground font-mono bg-primary/5 px-2 py-1 rounded">
+                        {example}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
