@@ -23,7 +23,7 @@ export function Features() {
     {
       icon: WalletIcon,
       title: "Affordable Pricing",
-      description: "Start free with 20 messages per month. Pro plans available for unlimited access at local KES rates.",
+      description: "Start free with 20 messages per day. Pro plans available for unlimited access at local KES rates.",
     },
     {
       icon: BrainIcon,
