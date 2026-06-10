@@ -40,6 +40,12 @@ export function Footer() {
             <p className="text-xs text-muted-foreground mt-1">
               {SEMAI_CONFIG.networks.join(" & ")} {SEMAI_CONFIG.country}
             </p>
+            <a
+              href="mailto:contact@semai.africa"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors mt-2 inline-block"
+            >
+              contact@semai.africa
+            </a>
           </div>
         </div>
         
