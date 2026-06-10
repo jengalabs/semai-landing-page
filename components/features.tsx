@@ -78,7 +78,7 @@ function PhoneIcon({ className }: { className?: string }) {
 function DataIcon({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.332a9 9 0 11-1.414-1.414M21 12a9 9 0 11-9-9m6.707-3.707l-3 3m0-6l3 3m-6 0l3-3m0 6l-3-3" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7 8h10a2 2 0 012 2v8a2 2 0 01-2 2H9l-4.35 4.35V10a2 2 0 012-2z" />
     </svg>
   )
 }
